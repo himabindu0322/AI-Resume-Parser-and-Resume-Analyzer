@@ -1,0 +1,141 @@
+# Apps & Tools You Need
+
+1. Visual Studio Code
+2. Python
+
+# Python Libraries Required
+
+Install these in VS Code terminal:
+
+pip install pandas numpy nltk scikit-learn matplotlib seaborn ,
+pip install wordcloud
+
+# Dataset Needed
+
+Use the Kaggle Resume Dataset.
+
+Search:
+Resume Dataset
+
+# Create Virtual Environment
+
+Run:
+
+python -m venv venv
+
+Activate it:
+Windows
+venv\Scripts\activate
+If activated correctly, you will see:
+(venv)
+
+# Create Main Files
+
+Create these files in VS Code:
+
+app.py ,
+preprocess.py ,
+train_model.py ,
+requirements.txt
+
+# In the VS Code terminal, run this command:
+
+pip install pandas
+
+If you also need all required libraries together, run:
+
+pip install pandas numpy nltk scikit-learn matplotlib seaborn wordcloud
+
+command -   python app.py
+
+# In your VS Code terminal, install NLTK using:
+
+pip install nltk
+
+# Download Required NLTK Resources
+
+Create a file named:
+download_nltk.py
+Paste this:
+import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+
+Run:
+
+python download_nltk.py
+You will see packages downloading successfully.
+
+# These Resources Are Needed For
+
+punkt → tokenization (splitting sentences/words)
+stopwords → removing common words like:
+the
+is
+and
+are
+
+# command -   python preprocess.py
+
+# install
+
+pip install scikit-learn
+
+# Verify Installation
+Run:
+pip show scikit-learn
+If installed correctly, you will see version details.
+
+python train_model.py
+
+# PDF Resume Upload
+Use:
+
+pip install pdfplumber
+
+Then users can upload resumes directly.
+
+# Web App UI
+Use Streamlit
+
+Install:
+
+pip install streamlit
+
+Then create:
+upload button
+prediction result
+resume score
+extracted skills
+
+# Recommended Additional Installations
+Run this also:
+
+pip install PyPDF2
+
+Useful for reading PDF text.
+
+# After Installation
+You can verify:
+pip list
+You should see:
+streamlit
+pdfplumber
+PyPDF2
+
+# Run Streamlit App
+In terminal:
+streamlit run app.py
+
+# Run Once
+
+python save_model.py
+This creates:
+model.pkl
+tfidf.pkl
+Then your Streamlit app becomes much faster.
+
+# Run App Again
+In terminal:
+
+streamlit run app.py
